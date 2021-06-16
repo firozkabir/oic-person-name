@@ -6,6 +6,7 @@ from faker import Faker
 import pytest
 from random import randrange
 from requests.models import HTTPBasicAuth
+import logging
 
 
 class PersonName:
