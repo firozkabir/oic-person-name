@@ -1,5 +1,5 @@
 [DEV]
-host = instanceid.integration.ocp.oraclecloud.com
+host = https://instanceid.integration.ocp.oraclecloud.com
 basepath = /ic/api/integration/v1/flows/rest/someflow/9.0
 username = user@yorku.ca
 password = myBasicAuthPasswordHere
