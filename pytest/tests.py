@@ -14,6 +14,9 @@ class PersonName:
         self.surname = surname
         self.firstname = firstname
 
+    def __str__(self):
+        return f"sisid: {self.sisid}, surname: {self.surname}, firstname: {self.firstname}"
+
     def __eq__(self, other: object) -> bool:
 
         is_equal = False
@@ -42,7 +45,7 @@ def test_post_person_name():
     password = config['password']
 
     url = f"https://{config['host']}/{config['basepath']}/{pytest.person_name.sisid}"
-    print(url)
+
     headers = {
         'Content-Type': 'application/json'
     }
@@ -57,6 +60,10 @@ def test_post_person_name():
                              auth=HTTPBasicAuth(
                                  config['username'], config['password'])
                              )
+
+    print(pytest.person_name.sisid)
+    print(pytest.person_name.surname)
+    print(pytest.person_name.firstname)
     assert response.status_code == 202
 
 
@@ -76,4 +83,6 @@ def test_get_person_name():
     assert response.status_code == 200
     response_person_name = PersonName(int(response_dict.get(
         'sisid')), response_dict.get('surname'), response_dict.get('firstname'))
+
+    print(response_person_name)
     assert pytest.person_name == response_person_name
