@@ -2,6 +2,44 @@
 
 A simple project to demonstrate oic development, testing etc.
 
+## Requirements:
+
+- create a simple table "person_name" and a pl/sql procedure that interacts with it.
+- create a REST API to interact with this table
+- write test cases to help with test driven development
+
+## REST API Specifications:
+
+- endpoint `personName` should take one parameter `sisid`. (e.g. GET https://...../personName/{sisid})
+- GET request will only need the `{sisid}` parameter and no body and it should return
+  a flat json object representing one record in that table for the given `sisid`:
+  ```json
+    GET https://...../personName/999111222
+    {
+        "sisid": "999111222",
+        "dlc": "July 20, 2016 15:00:00",
+        "surname": "Tester",
+        "firstname": "Rose"
+    }
+  ```
+- POST request should have the `{sisid}` parameter in the url and have `surname` and `firstname` in the body as json:
+  ```json
+      POST https://...../personName/999111222
+      {
+          "surname": "Tester",
+          "firstname": "Rose"
+      }
+  ```
+
+## Workflow:
+
+- write pytest script for the two requests specified above
+- all tests would fail to begin with
+- develop the database table and procedure or deploy them from this repo in `sql` directory (see instructions below)
+- develop the integration or deploy it from this repo in `integration` directory
+- update the host and basepath for the integration flow in config.ini, there is a sample file you can copy to get started
+- run pytest to make sure integrations are working as expected
+
 ## deploy sql
 
 ```bash
