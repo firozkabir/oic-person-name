@@ -12,7 +12,8 @@ sqlplus username/password@database @deploy-objects.sql
 
 ## deploy integration artifact
 
-- log into your OIC instance and import the iar artifact found in iar/ directory
+- log into your OIC instance and import the par artifact found in integration directory
+- configure the connection details and activate the integration flow
 
 ## install and configure and run test script
 
