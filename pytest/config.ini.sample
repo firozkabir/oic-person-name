@@ -3,3 +3,7 @@ host = https://instanceid.integration.ocp.oraclecloud.com
 basepath = /ic/api/integration/v1/flows/rest/DEMOPERSONNAME/1.0/personName/
 username = user@yorku.ca
 password = myBasicAuthPasswordHere
+sasl_plain_username = tenant/username/stream-pool-ocid
+sasl_plain_password = t0k3n
+bootstrap_servers = cell-1.streaming.{region}.oci.oraclecloud.com:9092
+topic = stream-topic
