@@ -19,7 +19,7 @@
   - Design a stack based on York's integration requirements
   - Apply York's use cases to confirm the stack meets requirements
   - Develop governance strategy for the integration platform
-  - Develop IaC to build the production environment
+  - Develop Infrastructure as Code (IaC) to build the production environment
 
 ## Timeline: July - October (TBC)
 
@@ -32,7 +32,7 @@
 
 - https://yuoffice.sharepoint.com/sites/UIT-YorkUSSRPArchitecture-3-MasterDataManagement/_layouts/15/Doc.aspx?OR=teams&action=edit&sourcedoc={5692C3E7-4132-4A85-A901-B239EA50FCC3}
 
-## CMD will be prioratized
+## CMD will be prioritized
 
 ## Need SME engagement from ownsers of authorotative sources
 
