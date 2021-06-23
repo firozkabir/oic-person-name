@@ -7,8 +7,13 @@
 
 - Integration developers are already running through use cases to learn the quirks of the OIC platoform
 - Developers are also working on testing and CI/CD workflows for integrations
-  - https://github.com/firozkabir/oic-person-name (short demo)
-  - https://bitbucket.org/pingli2008/ssrp-cli/src/master/ (todo)
+  - https://github.com/firozkabir/oic-person-name
+  - https://bitbucket.org/pingli2008/ssrp-cli/src/master/
+- Demo
+  - Build a REST API to call pl/sql procedure
+  - Configure an OCI Stream (Kafka Topic)
+  - Add stream to the REST API to make it more scalable
+  - Run pytest to unit thest the integration flow
 
 ![Integration Use cases - page 1](page1.png)
 ![Integration Use cases - page 2 ](page2.png)
