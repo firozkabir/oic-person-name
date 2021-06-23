@@ -68,6 +68,14 @@ def test_post_person_name():
     assert response.status_code == 202
 
 
+def test_check_stream():
+    pass
+
+
+def test_check_database():
+    pass
+
+
 def test_get_person_name():
 
     config = get_config()
