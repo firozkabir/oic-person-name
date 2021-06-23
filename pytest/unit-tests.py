@@ -30,6 +30,9 @@ class PersonName:
 
 
 #global variables
+# need to develop a student provider for faker
+# https://faker.readthedocs.io/en/stable/
+
 faker = Faker()
 pytest.person_name = PersonName(
     randrange(999), faker.last_name(), faker.first_name())
@@ -48,7 +51,6 @@ def test_post_person_name():
     password = config['password']
 
     url = f"https://{config['host']}/{config['basepath']}"
-    print(url)
 
     headers = {
         'Content-Type': 'application/json'
@@ -114,4 +116,4 @@ def test_get_person_name():
         'sisid'), response_dict.get('surname'), response_dict.get('firstname'))
 
     print(response_person_name)
-    #assert pytest.person_name == response_person_name
+    assert pytest.person_name == response_person_name
