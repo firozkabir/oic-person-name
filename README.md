@@ -17,15 +17,15 @@ A simple project to demonstrate oic development, testing etc.
     GET https://...../personName/999111222
     {
         "sisid": "999111222",
-        "dlc": "July 20, 2016 15:00:00",
         "surname": "Tester",
         "firstname": "Rose"
     }
   ```
-- POST request should have the `{sisid}` parameter in the url and have `surname` and `firstname` in the body as json:
+- POST request should not have any parameter in the url. Instead the request payload should have `sisid`, `surname` and `firstname` as json:
   ```json
-      POST https://...../personName/999111222
+      POST https://...../personName
       {
+          "sisid": 999111222,
           "surname": "Tester",
           "firstname": "Rose"
       }
