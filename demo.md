@@ -30,6 +30,8 @@
 
 ## Developing MDM use cases
 
+- https://yuoffice.sharepoint.com/sites/UIT-YorkUSSRPArchitecture-3-MasterDataManagement/_layouts/15/Doc.aspx?OR=teams&action=edit&sourcedoc={5692C3E7-4132-4A85-A901-B239EA50FCC3}
+
 ## CMD will be prioratized
 
 ## Need SME engagement from ownsers of authorotative sources
