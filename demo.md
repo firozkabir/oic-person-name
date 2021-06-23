@@ -33,3 +33,14 @@
 ## CMD will be prioratized
 
 ## Need SME engagement from ownsers of authorotative sources
+
+<br />
+<br />
+
+# Data Quality Updates
+
+## Server has been provisioned
+
+## Request for database accounts, local and admin firewall rules have been created
+
+## Analysis of object level grants in progress, request to follow soon
